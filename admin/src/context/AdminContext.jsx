@@ -7,7 +7,7 @@ export const AdminContext = createContext()
 const AdminContextProvider = (props) => {
 
     const [aToken, setAToken] = useState(localStorage.getItem("AToken") ? localStorage.getItem("AToken") : '');
-    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    const backendUrl = "https://prescripto-backend-gx6e.onrender.com";
     const [doctors, setDoctors] = useState([])
     const [appointments, setAppointments] = useState([])
     const [dashData, setDashData] = useState([]);
