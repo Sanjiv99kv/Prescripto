@@ -10,7 +10,7 @@ const AppContextProvider = (props) => {
     const navigate = useNavigate();
     const currencySymbol = "$"
     const [doctors, setDoctors] = useState([])
-    const backendUrl = 'http://localhost:3000'
+    const backendUrl = 'https://prescripto-backend-gx6e.onrender.com'
     const [token, setToken] = useState(localStorage.getItem("token") ? localStorage.getItem("token") : "");
     const [userData, setUserData] = useState(false)
 
